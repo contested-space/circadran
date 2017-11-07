@@ -1,0 +1,6 @@
+#N canvas 1 79 1585 820 10;
+#X obj 120 60 inlet lst;
+#X obj 120 229 outlet car;
+#X obj 120 177 list-nth 0;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;

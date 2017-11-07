@@ -1,0 +1,16 @@
+#N canvas 1 79 1585 820 10;
+#X obj 34 13 inlet interval;
+#X obj 38 246 outlet interval;
+#X text 145 10 si intervale negatif \, retourne intervale positif si
+trop grand \, retourne entre 0 et 12;
+#X obj 83 123 moses 0;
+#X obj 44 156 + 12;
+#X obj 131 172 moses 12;
+#X obj 196 207 - 12;
+#X connect 0 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 1 0;
+#X connect 5 1 6 0;
+#X connect 6 0 5 0;
